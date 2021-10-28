@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <input type="text" id="countryInput" onkeyup="countryFunction()" placeholder="Search for country.." title="Type in a country">
+
+            <ul id="countryList">
+            </ul>
+        </div>
+        <div class="col-sm">
+            <button type="button" class="btn btn-primary" onclick="GetListCity()">Search City</button>
+        </div>
+        <div class="col-sm">
+            <input type="text" id="cityInput" onkeyup="cityFunction()" placeholder="Search for city.." title="Type in a city">
+
+            <ul id="cityList">
+            </ul>
+        </div>
+        <div class="col-sm">
+            <button type="button" class="btn btn-primary" onclick="GetWeather()">Search City</button>
+        </div>
+        <div class="col-sm" id="weatherhtml">
+            
+        </div>
+    </div>
+</div>
